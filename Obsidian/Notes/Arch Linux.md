@@ -111,7 +111,7 @@ $ systemctl start systemd-zram-setup@zram0.service
 This is a list of all packages, required and optional.
 ```diff
 # pacman packages
-$ sudo pacman -S obsidian wezterm ttf-jetbrains-mono-nerd noto-fonts-emoji neovim unzip npm udiskie neofetch noto-fonts-cjk noto-fonts gparted glxgears polkit-kde-agent swayidle discord thunar gvfs thunar-archive-plugin ark tumbler ffmpegthumbnailer ntfs-3g rofi cliphist nvtop steam intellij-idea-community-edition spotify-laucher
+$ sudo pacman -S obsidian wezterm ttf-jetbrains-mono-nerd noto-fonts-emoji neovim unzip npm udiskie neofetch noto-fonts-cjk noto-fonts gparted glxgears polkit-gnome swayidle discord thunar gvfs thunar-archive-plugin ark tumbler ffmpegthumbnailer ntfs-3g rofi cliphist nvtop steam intellij-idea-community-edition spotify-laucher
 
 # Install NvChad
 $ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
@@ -150,14 +150,36 @@ Just some Notes so I don't forget something.
 ├── .config
 │   ├── dunst
 │   ├── eww
+│   ├── gtk-2.0 not done
+│   ├── gtk-3.0
+│   ├── gtk-4.0 not done
 │   ├── hypr
+│   ├── neofetch
+│   ├── rofi
 │   ├── swaylock
 │   ├── Vencord
 │   │   └── settings
-│   │   └── themes
-│   └── wlogout
+│   ├── wlogout
+│   └── starship.toml
 ├── Obsidian
 │   └── Notes
-│       └── Arch Linux.md
-└── .wezterm.lua
+│   │   ├── .obsidian not done
+│       └── Arch Linux.md not done
+└── .wezterm.lua not done
 ```
+
+### Stuff To Style
+
+A list of stuff I need to style.
+- [x] obsidian
+- [ ] wezterm
+- [ ] neovim
+- [x] [neofetch](https://github.com/chick2d/neofetch-themes/blob/main/normal/config2.conf)
+- [x] [gnome-stuff(thunar, polkit, gparted)](https://github.com/catppuccin/gtk/tree/main)
+- [ ] rofi
+- [x] [starship](https://starship.rs/presets/nerd-font.html)
+- [x] [wlogout](https://github.com/AmitGolden/dotfiles/tree/main)
+- [x] [google-chrome](https://chrome.google.com/webstore/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
+- [ ] hyprland
+- [ ] eww
+- [x] [discord](https://catppuccin.github.io/discord/dist/catppuccin-mocha-pink.theme.css)
