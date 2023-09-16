@@ -1,0 +1,61 @@
+# Miscellaneous
+ignore-empty-password
+show-failed-attempts
+screenshots
+# indicator-caps-lock
+# no-unlock-indicator
+indicator
+clock
+indicator-idle-visible
+
+# General
+fade-in=0.5
+grace=0
+timestr=%H:%M:%S
+datestr=%d/%m/%Y
+
+# Backspace Highlight
+bs-hl-color=f38ba8
+# caps-lock-bs-hl-color=f38ba8
+# caps-lock-key-hl-color=f2cdcd
+
+# Font
+font=JebtrainsMono-SemiBold
+
+# Indicator
+indicator-radius=150
+indicator-thickness=10
+
+# Inside Color
+inside-color=1e1e2ecc
+inside-clear-color=1e1e2ecc
+# inside-caps-lock-color=f9e2afcc
+inside-ver-color=1e1e2ecc
+inside-wrong-color=1e1e2ecc
+
+# Figuring this out
+key-hl-color=f5c2e7
+layout-bg-color=f38ba8
+layout-border-color=fab387
+layout-text-color=89dceb
+
+# Ring Color
+ring-color=181825
+ring-clear=181825
+# ring-caps-lock-color=fab387
+ring-ver-color=89b4fa
+ring-wrong-color=f38ba8
+line-uses-ring
+
+# Seperator
+separator-color=181825
+
+# Text Color
+text-color=cdd6f4
+text-clear-color=cdd6f4
+text-caps-lock-color=f9e2af
+text-ver-color=cdd6f4
+text-wrong-color=f38ba8
+
+# Effects
+effect-blur=10x2
