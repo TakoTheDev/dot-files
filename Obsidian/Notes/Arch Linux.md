@@ -168,6 +168,7 @@ Just some Notes so I don't forget something.
 │   ├── gtk-4.0
 │   ├── hypr
 │   ├── neofetch
+│   ├── nvim
 │   ├── rofi
 │   ├── swaylock
 │   ├── Vencord
@@ -181,6 +182,7 @@ Just some Notes so I don't forget something.
 └── .wezterm.lua
 ```
 [git signing](https://www.jetbrains.com/help/idea/set-up-GPG-commit-signing.html)
+[git signing part 2](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
 
 ### Stuff To Style
 
