@@ -180,6 +180,7 @@ Just some Notes so I don't forget something.
 │       └── Arch Linux.md
 └── .wezterm.lua
 ```
+[git signing](https://www.jetbrains.com/help/idea/set-up-GPG-commit-signing.html)
 
 ### Stuff To Style
 
