@@ -56,6 +56,8 @@ $ nvim ~/.zshrc
 + alias ..="cd .."
 + alias home="cd ~"
 + alias update="sudo pacman -Syu"
++ # Removes all orphaned packages
++ alias orphans="pacman -Qtdq | sudo pacman -Rns -"
 + # [..]
 + zinit load zsh-users/zsh-autosuggestions
 + zinit load zsh-users/zsh-syntax-highlighting
@@ -81,6 +83,7 @@ $ systemctl enable paccache.timer
 Nvidia is a bad company so we need to add some fixes for `hyprland` to work as best as possible.
 ```diff
 $ sudo pacman -S nvidia-open-dkms qt5-wayland qt5ct libva linux-headers
+$ paru hyprland-nvidia
 $ sudo nvim /etc/default/grub
 + GRUB_CMDLINE_LINUX_DEFAULT="[..] nvidia_drm.modeset=1"
 - GRUB_CMDLINE_LINUX_DEFAULT="[..]"
@@ -106,12 +109,15 @@ $ sudo nvim /etc/systemd/zram-generator.conf
 $ systemctl start systemd-zram-setup@zram0.service
 ```
 
-### List Of Packages
+### How To Install
 
-This is a list of all packages, required and optional.
+This is basically how to install these files.
 ```diff
 # pacman packages
-$ sudo pacman -S obsidian wezterm ttf-jetbrains-mono-nerd noto-fonts-emoji neovim unzip npm udiskie neofetch noto-fonts-cjk noto-fonts gparted glxgears polkit-gnome swayidle discord thunar gvfs thunar-archive-plugin ark tumbler ffmpegthumbnailer ntfs-3g rofi cliphist nvtop steam intellij-idea-community-edition spotify-laucher
+$ sudo pacman -S obsidian wezterm ttf-jetbrains-mono-nerd noto-fonts-emoji neovim unzip npm udiskie neofetch noto-fonts-cjk noto-fonts gparted glxgears polkit-gnome swayidle discord thunar gvfs thunar-archive-plugin ark tumbler ffmpegthumbnailer ntfs-3g rofi cliphist steam intellij-idea-community-edition spotify-laucher gamescope
+
+# If you use a Nvidia GPU also install these
+$ sudo pacman -S nvtop
 
 # Install NvChad
 $ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
@@ -124,22 +130,29 @@ $ sudo pacman -R kitty
 $ rm -rf ~/.config/kitty
 
 # paru packages
-$ paru -S hyprshot jdk17-openjdk mindustry swaylock-effects-git wlogout swww python-pywal cbonsai google-chrome hyprland-nvidia
+$ paru -S hyprshot jdk17-openjdk mindustry swaylock-effects-git wlogout swww python-pywal cbonsai google-chrome
 
-# DO NOT FORGET
 # Integrate the files from the github
-# DO NOT FORGET
+$ git clone https://github.com/TakoTheDev/dot-files.git
 
-# If you don't have a Nvidia GPU you can remove these
-$ sudo pacman -R nvtop
+# If you don't have a Nvidia GPU you should do these
 $ nvim ~/.config/hypr/env.conf
 - env = LIBBVA_DRIVER_NAME,nvidia
 - env = XDG_SESSION_TYPE,wayland
 - env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 - env = WLR_NO_HARDWARE_CURSORS,1
+# This may help performance-wise when gaming on gamescope
+$ sudo setcap 'CAP_SYS_NICE=eip' $(which gamescope)
+# Test if it works
+$ gamescope
+# If it fails you can revert it with this
+$ sudo setcap 'CAP_SYS_NICE-eip' $(which gamescope)
 
 # Reboot to check if everything worked
 $ reboot
+
+# Launch Steam Games with this
++ gamescope -w 1920 -h 1080 --force-grab-cursor -fbe %command%
 ```
 
 ### Notes To Self
@@ -150,9 +163,9 @@ Just some Notes so I don't forget something.
 ├── .config
 │   ├── dunst
 │   ├── eww
-│   ├── gtk-2.0 not done
+│   ├── gtk-2.0
 │   ├── gtk-3.0
-│   ├── gtk-4.0 not done
+│   ├── gtk-4.0
 │   ├── hypr
 │   ├── neofetch
 │   ├── rofi
@@ -163,9 +176,9 @@ Just some Notes so I don't forget something.
 │   └── starship.toml
 ├── Obsidian
 │   └── Notes
-│   │   ├── .obsidian not done
-│       └── Arch Linux.md not done
-└── .wezterm.lua not done
+│   │   ├── .obsidian
+│       └── Arch Linux.md
+└── .wezterm.lua
 ```
 
 ### Stuff To Style

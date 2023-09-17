@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "125b9298e200555f",
+    "type": "split",
+    "children": [
+      {
+        "id": "41b4c52cf34da55f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c039b5129012a4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arch Linux.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6aff27ed160b0f29",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6d50e221d377c77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13ff52f3d245e1b7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1e75b24a10035055",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c44917a4e4f935a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1ccb45eb17ec50b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ac95c7619d01473",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Arch Linux.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "2c039b5129012a4c",
+  "lastOpenFiles": [
+    "Arch Linux.md",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/whiteboard.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/sponge.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-yellow.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-white.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-red.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-purple.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-orange.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-green.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/chalk-blue.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/img/boardmarker-yellow.png",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/menu/README.md",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/menu/CONTRIBUTING.md",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/customcontrols/README.md",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chart/README.md",
+    "obsidian/plugins/obsidian-advanced-slides/plugin/chalkboard/README.md"
+  ]
+}
